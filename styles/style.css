@@ -321,7 +321,7 @@ ol {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-  /*vs code просил добавить line-clamp: 1; - если без него показывало, что есть ошибка*/
+  /*vs code просил добавить line-clamp: 1; если без него показывало, что есть ошибка*/
   line-clamp: 1;
   overflow: hidden;
   text-overflow: ellipsis;
