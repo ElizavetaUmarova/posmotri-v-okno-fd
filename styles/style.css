@@ -112,14 +112,14 @@ ol {
 
 .search-form__textfield {
   width: 225px;
-  height: 27px;
+  min-height: 27px;
   -webkit-appearance: none; 
   -moz-appearance: none; 
   appearance: none;
   /*скрыла обводку, которая рисовалась в встроенной таблице стилей браузера */
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
   font-family: inherit;
   font-size: inherit;
   font-weight: 400;
@@ -159,7 +159,7 @@ ol {
   gap: 15px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 13%;
   cursor: pointer;
@@ -187,7 +187,7 @@ ol {
 
 .button {
   display: block;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
@@ -223,7 +223,6 @@ ol {
 }
 
 .content__details {
-  overflow: hidden;
   width: 100%;
   height: 100%;
 }
@@ -243,7 +242,8 @@ ol {
 
 .content__list-container {
   position: relative;
-  height: 298px;
+  max-inline-size: 399px;
+  block-size: 298px;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -298,7 +298,6 @@ ol {
 .content__video-card {
   display: flex;
   align-items: flex-start;
-  overflow: hidden;
 }
 
 .content__video-card-description-container {
@@ -325,8 +324,8 @@ ol {
   line-clamp: 1;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
+  font-family: inherit;
+  font-size: inherit;
   line-height: 16.2px;
   padding-top: 4px;
 }
